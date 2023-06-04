@@ -5,7 +5,7 @@ const SUMMARIZE_API_KEY = process.env.REACT_APP_SUMMARIZE_API_KEY;
 export const summarizeApi = createApi({
   reducerPath: 'summarize',
   baseQuery: fetchBaseQuery({ 
-    baseUrl: '', //'https://article-extractor-and-summarizer.p.rapidapi.com',
+    baseUrl: 'https://article-extractor-and-summarizer.p.rapidapi.com',
     prepareHeaders: (headers) => {
         headers.set("X-RapidAPI-Host", "article-extractor-and-summarizer.p.rapidapi.com");
         headers.set("X-RapidAPI-Key", SUMMARIZE_API_KEY);
